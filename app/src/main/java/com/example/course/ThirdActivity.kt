@@ -15,6 +15,7 @@ class ThirdActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             val sender = edit.text.toString()
+            //prelevo il testo e lo passo come messaggio stringa
             SecondActivity.sendIntent(this, sender)
         }
     }
