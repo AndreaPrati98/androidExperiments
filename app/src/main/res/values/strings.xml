@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">I hate vegetables</string>
+    <string name="second_act">Learn intent</string>
+    <string name="third_act">Put extra</string>
+    <string name="unlockButton">Unlock</string>
+    <string name="goToPswAct">Go to the password activity</string>
 </resources>

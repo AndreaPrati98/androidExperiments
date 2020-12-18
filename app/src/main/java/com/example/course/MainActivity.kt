@@ -3,11 +3,11 @@ package com.example.course
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
-import java.net.URI
-import java.nio.file.Paths
 
+/**
+ * This is my first Activity. Its goal is to pick a random svg image in a List
+ */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var listId: List<Int>
@@ -25,8 +25,12 @@ class MainActivity : AppCompatActivity() {
 
         chActivity.setOnClickListener {
 
-            startActivity(Intent(this, SecondActivity::class.java))
+            startActivity(Intent(this, SecondActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT))
 
+        }
+
+        goToPsw.setOnClickListener {
+            startActivity(Intent(this, VerificationActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT))
         }
     }
 

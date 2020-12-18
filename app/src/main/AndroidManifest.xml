@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Course">
-        <activity android:name=".ThirdActivity"></activity>
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".VerificationActivity"></activity>
+        <activity android:name=".PasswordsActivity" />
+        <activity
+            android:name=".ThirdActivity"
+            android:label="@string/third_act" />
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/second_act" />
         <activity android:name=".MainActivity">
             <intent-filter>
 

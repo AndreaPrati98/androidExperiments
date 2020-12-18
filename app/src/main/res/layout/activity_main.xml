@@ -33,11 +33,22 @@
         android:id="@+id/chActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Activity"
         android:gravity="center"
+        android:text="Change Activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chVeget"
-        app:layout_constraintVertical_bias="0.681" />
+        app:layout_constraintVertical_bias="0.295" />
+
+    <Button
+        android:id="@+id/goToPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/goToPswAct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chActivity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

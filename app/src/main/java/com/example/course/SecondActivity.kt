@@ -38,8 +38,8 @@ class SecondActivity : AppCompatActivity() {
                 //questo metodo serve a passare dati extra tramite intent
                 putExtra(TAG, value)
             }
-
-            context.startActivity(intent)
+            //questo flag mi consente di 
+            context.startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
 
         //devo definire un tag composto da package + nome del valore che devo passare, in questo caso "value"
