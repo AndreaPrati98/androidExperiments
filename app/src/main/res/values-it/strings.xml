@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="goToPswAct">Vai all\'activity delle password</string>
+    <string name="third_act">Aggiungere Extra all\'Intent</string>
+    <string name="unlockButton">Sblocca</string>
+</resources>
