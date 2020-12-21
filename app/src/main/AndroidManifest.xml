@@ -10,21 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Course">
 
-        <activity android:name=".VerificationActivity"></activity>
+        <activity
+            android:name=".VerificationActivity"
+            android:parentActivityName=".MainActivity"
+            />
 
-        <activity android:name=".PasswordsActivity" />
+        <activity
+            android:name=".PasswordsActivity"
+            android:parentActivityName=".VerificationActivity"/>
 
         <activity
             android:name=".ThirdActivity"
-            android:label="@string/third_act" />
+            android:label="@string/third_act"
+            android:parentActivityName=".SecondActivity"/>
 
         <activity
             android:name=".SecondActivity"
-            android:label="@string/second_act" />
+            android:label="@string/second_act"
+            android:parentActivityName=".MainActivity"/>
 
         <activity
             android:name=".ScrollViewActivity"
             android:label="@string/label_scroll_view"
+            android:parentActivityName=".SecondActivity"
             />
 
         <activity android:name=".MainActivity">
