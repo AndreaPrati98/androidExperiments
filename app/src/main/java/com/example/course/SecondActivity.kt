@@ -4,8 +4,9 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import kotlinx.android.synthetic.main.activity_second.*
-import kotlinx.android.synthetic.main.activity_third.*
 
 /**
  * Activity with purpose to learn how to use intents
@@ -22,6 +23,10 @@ class SecondActivity : AppCompatActivity() {
             startActivity(Intent(this, ThirdActivity::class.java))
         }
 
+        button_to_scroll_view.setOnClickListener {
+            startActivity(Intent(this, ScrollViewActivity::class.java))
+        }
+
         //in caso di intent null allora ritorna ""
         valueReceived = intent?.getStringExtra(TAG) ?: ""
 
@@ -29,6 +34,8 @@ class SecondActivity : AppCompatActivity() {
 
             received.text = "Ciao $valueReceived"
         }
+
+
     }
 
     //questo serve perchè lo "static" non c'è in kotlin
@@ -44,5 +51,12 @@ class SecondActivity : AppCompatActivity() {
 
         //devo definire un tag composto da package + nome del valore che devo passare, in questo caso "value"
         private val TAG = SecondActivity::class.java.name + "value"
+
     }
+
+    fun toScrollViewActivity(view: View) {
+        Log.d("Creation", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb")
+        startActivity(Intent(this, ScrollViewActivity::class.java))
+    }
+
 }

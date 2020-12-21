@@ -9,14 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Course">
+
         <activity android:name=".VerificationActivity"></activity>
+
         <activity android:name=".PasswordsActivity" />
+
         <activity
             android:name=".ThirdActivity"
             android:label="@string/third_act" />
+
         <activity
             android:name=".SecondActivity"
             android:label="@string/second_act" />
+
+        <activity
+            android:name=".ScrollViewActivity"
+            android:label="@string/label_scroll_view"
+            />
+
         <activity android:name=".MainActivity">
             <intent-filter>
 

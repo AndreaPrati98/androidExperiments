@@ -10,8 +10,8 @@
         android:id="@+id/received"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity used to intent"
         android:gravity="center"
+        android:text="@string/second_act"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,9 +24,19 @@
         android:text="Go through"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/received"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.86" />
+
+    <Button
+        android:id="@+id/button_to_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_to_scroll_view"
+        app:layout_constraintEnd_toStartOf="@+id/goThrough"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goThrough"
+        android:onClick="toScrollViewActivity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

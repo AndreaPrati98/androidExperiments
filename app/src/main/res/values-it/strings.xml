@@ -3,4 +3,5 @@
     <string name="goToPswAct">Vai all\'activity delle password</string>
     <string name="third_act">Aggiungere Extra all\'Intent</string>
     <string name="unlockButton">Sblocca</string>
+    <string name="second_act">Activity usata per l\'Intent</string>
 </resources>
