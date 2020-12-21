@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_second.*
 class SecondActivity : AppCompatActivity() {
 
     private var valueReceived = ""
+    private var LOG_TAG = this::class.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +22,6 @@ class SecondActivity : AppCompatActivity() {
 
         goThrough.setOnClickListener() {
             startActivity(Intent(this, ThirdActivity::class.java))
-        }
-
-        button_to_scroll_view.setOnClickListener {
-            startActivity(Intent(this, ScrollViewActivity::class.java))
         }
 
         //in caso di intent null allora ritorna ""
@@ -55,7 +52,8 @@ class SecondActivity : AppCompatActivity() {
     }
 
     fun toScrollViewActivity(view: View) {
-        Log.d("Creation", "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb")
+        val functionName = object :Any(){}.javaClass.enclosingMethod?.name
+        Log.d(LOG_TAG, "Button clicked, function: $functionName executed")
         startActivity(Intent(this, ScrollViewActivity::class.java))
     }
 
