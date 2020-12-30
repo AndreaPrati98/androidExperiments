@@ -9,32 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Course">
-
+        <activity
+            android:name=".twoActivity.ReplyerActivity"
+            android:label="@string/replyerActivity"
+            android:parentActivityName=".SecondActivity"/>
+        <activity
+            android:name=".twoActivity.SenderActivity"
+            android:label="@string/senderActivity"
+            android:parentActivityName=".SecondActivity"/>
         <activity
             android:name=".VerificationActivity"
-            android:parentActivityName=".MainActivity"
-            />
-
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PasswordsActivity"
-            android:parentActivityName=".VerificationActivity"/>
-
+            android:parentActivityName=".VerificationActivity" />
         <activity
             android:name=".ThirdActivity"
             android:label="@string/third_act"
-            android:parentActivityName=".SecondActivity"/>
-
+            android:parentActivityName=".SecondActivity" />
         <activity
             android:name=".SecondActivity"
             android:label="@string/second_act"
-            android:parentActivityName=".MainActivity"/>
-
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ScrollViewActivity"
             android:label="@string/label_scroll_view"
-            android:parentActivityName=".SecondActivity"
-            />
-
+            android:parentActivityName=".SecondActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
 

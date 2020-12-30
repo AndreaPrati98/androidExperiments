@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.example.course.twoActivity.SenderActivity
 import kotlinx.android.synthetic.main.activity_second.*
 
 /**
@@ -55,6 +56,10 @@ class SecondActivity : AppCompatActivity() {
         val functionName = object :Any(){}.javaClass.enclosingMethod?.name
         Log.d(LOG_TAG, "Button clicked, function: $functionName executed")
         startActivity(Intent(this, ScrollViewActivity::class.java))
+    }
+
+    fun toSenderReplyer(view: View) {
+        startActivity(Intent(this, SenderActivity::class.java))
     }
 
 }

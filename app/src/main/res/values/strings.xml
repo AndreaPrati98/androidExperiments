@@ -29,4 +29,8 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="second_act">Activity used to intent</string>
     <string name="button_to_scroll_view" translatable="false">Scroll view</string>
     <string name="label_scroll_view">Scroll View</string>
+    <string name="insert_the_message">Insert the message</string>
+    <string name="btn_sender_replyer">sender/replyer</string>
+    <string name="replyerActivity">Replyer Activity</string>
+    <string name="senderActivity">Sender Activity</string>
 </resources>
